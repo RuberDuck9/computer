@@ -13,7 +13,7 @@ Registry editor:
 Has the ability to copy data from any registry to any other registry   
 Has direct write access to reg0  
 
-Registry Addresses:  
+Register Addresses:  
 6 bits allocated to each address
 
 Input - [000000] - only read access  
@@ -32,6 +32,7 @@ Register 09 - [011000]
 
 Instructions:  
 Evaluated by the instruction interpreter  
+16 possible due to 4 bit representative value
 
 imm - [0000][000000000000]
 immediate the value stored in the first twelve digits to reg0
@@ -66,7 +67,7 @@ halt the computer
 
 ROM:  
 
-[0000000000000000][0000000000000000] - [Address][Stored Value]   
+[0000000000000000][0000000000000000] - [Address][Stored Value] - [Input][Output] 
 
 16 bits available for rom address  
 advance one memory address each "tick" or unit of time starting at zero   
