@@ -1,7 +1,5 @@
 # 16 Bit Custom Computer
 
-Rough Plans:
-
 16 Bit - [0000][000000][000000] - [Instruction][Copy from address][Copy to address]
 
 Main components:
@@ -11,11 +9,11 @@ Main components:
  - Read only memory 
  - ALU
 
-Registry editor:
-Has the ability to copy data from any registry to any other registry
-Has direct write access to reg0
+Registry editor:  
+Has the ability to copy data from any registry to any other registry   
+Has direct write access to reg0  
 
-Registry Addresses:
+Registry Addresses:  
 6 bits allocated to each address
 
 Input - [000000] - only read access  
