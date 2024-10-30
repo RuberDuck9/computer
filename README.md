@@ -8,20 +8,19 @@ Rough Plans:
 
 Addresses:
 
-Input - [000000] - only read access
+Input - [000000] - only read access  
+Output - [111111] - only write access  
 
-Register 00 - [000001] - direct twelve bit write access through imm instruction
-Register 01 - [000010] - alu has direct read access
-Register 02 - [000100] - alu has direct read access
-Register 03 - [001000] - alu has direct write access
-Register 04 - [010000]
-Register 05 - [100000]
-Register 06 - [000011]
-Register 07 - [000110]
-Register 08 - [001100]
-Register 09 - [011000]
-
-Output - [111111] - only write access
+Register 00 - [000001] - direct twelve bit write access through imm instruction  
+Register 01 - [000010] - alu has direct read access  
+Register 02 - [000100] - alu has direct read access  
+Register 03 - [001000] - alu has direct write access  
+Register 04 - [010000]  
+Register 05 - [100000]  
+Register 06 - [000011]  
+Register 07 - [000110]  
+Register 08 - [001100]  
+Register 09 - [011000]  
 
 Instructions:
 
