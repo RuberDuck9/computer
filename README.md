@@ -2,15 +2,26 @@
 
 Rough Plans:
 
-
 16 Bit - [0000][000000][000000] - [Instruction][Copy from address][Copy to address]
 
+Main components:
+ - Registry and registry editor
+ - System syncronization clock
+ - Instruction interpreter
+ - Read only memory 
+ - ALU
+
+Registry editor:
+Has the ability to copy data from any registry to any other registry
+Has direct write access to reg0
+
 Registry Addresses:
+6 bits allocated to each address
 
 Input - [000000] - only read access  
 Output - [111111] - only write access  
 
-Register 00 - [000001] - direct twelve bit write access through imm instruction  
+Register 00 - [000001] - direct twelve bit write access with registry editor through through imm instruction  
 Register 01 - [000010] - alu has direct read access  
 Register 02 - [000100] - alu has direct read access  
 Register 03 - [001000] - alu has direct write access  
@@ -21,7 +32,8 @@ Register 07 - [000110]
 Register 08 - [001100]  
 Register 09 - [011000]  
 
-Instructions:
+Instructions:  
+Evaluated by the instruction interpreter  
 
 imm - [0000][000000000000]
 immediate the value stored in the first twelve digits to reg0
@@ -65,3 +77,6 @@ read value at current address and pass it through to cpu
 
 128 kilobytes capacity - 65536 addresses * 2 bytes per addres =  131072 bytes   
 
+ALU:
+performs a math operation based on the value passed to it by the registry interpreter 
+can perform addition, subtraction, multiplication, division
