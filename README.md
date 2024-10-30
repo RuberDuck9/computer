@@ -77,5 +77,5 @@ read value at current address and pass it through to cpu
 128 kilobytes capacity - 65536 addresses * 2 bytes per addres =  131072 bytes   
 
 ALU:  
-performs a math operation based on the value passed to it by the registry interpreter   
+performs a math operation based on the value passed to it by the instruction interpreter   
 can perform addition, subtraction, multiplication, division
