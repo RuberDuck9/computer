@@ -3,10 +3,9 @@
 Rough Plans:
 
 
-
 16 Bit - [0000][000000][000000] - [Instruction][Copy from address][Copy to address]
 
-Addresses:
+Registry Addresses:
 
 Input - [000000] - only read access  
 Output - [111111] - only write access  
@@ -54,3 +53,15 @@ go to address zero in rom
 
 hlt - [1111]
 halt the computer
+
+ROM:  
+
+[0000000000000000][0000000000000000] - [Address][Stored Value]   
+
+16 bits available for rom address  
+advance one memory address each "tick" or unit of time starting at zero   
+override back to value specified in instructions "gto" and "rst"   
+read value at current address and pass it through to cpu   
+
+128 kilobytes capacity - 65536 addresses * 2 bytes per addres =  131072 bytes   
+
