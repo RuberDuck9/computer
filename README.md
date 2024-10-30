@@ -1,4 +1,4 @@
-# My 16 Bit Computer
+# 16 Bit Custom Computer
 
 Rough Plans:
 
