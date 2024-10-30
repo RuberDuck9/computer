@@ -4,15 +4,11 @@ Rough Plans:
 
 
 
-
-
-
 16 Bit - [0000][000000][000000] - [Instruction][Copy from address][Copy to address]
 
 Addresses:
 
 Input - [000000] - only read access
-Output - [111111] - only write access
 
 Register 00 - [000001] - direct twelve bit write access through imm instruction
 Register 01 - [000010] - alu has direct read access
@@ -24,6 +20,8 @@ Register 06 - [000011]
 Register 07 - [000110]
 Register 08 - [001100]
 Register 09 - [011000]
+
+Output - [111111] - only write access
 
 Instructions:
 
@@ -57,7 +55,3 @@ go to address zero in rom
 
 hlt - [1111]
 halt the computer
-~
-~
-~
-~
