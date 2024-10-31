@@ -11,7 +11,7 @@ Main components:
 
 Registry editor:  
 Has the ability to copy data from any registry to any other registry   
-Has direct write access to reg0  
+Has direct 12 bit write access to reg0  
 
 Register Addresses:  
 6 bits allocated to each address
@@ -19,7 +19,7 @@ Register Addresses:
 Input - [000000] - only read access  
 Output - [111111] - only write access  
 
-Register 00 - [000001] - direct twelve bit write access with registry editor through through imm instruction  
+Register 00 - [000001] - direct 12 bit write access with registry editor imm instruction  
 Register 01 - [000010] - alu has direct read access  
 Register 02 - [000100] - alu has direct read access  
 Register 03 - [001000] - alu has direct write access  
@@ -31,14 +31,14 @@ Register 08 - [001100]
 Register 09 - [011000]  
 
 Instructions:  
-Evaluated by the instruction interpreter  
+Evaluated by the instruction interpreter based off last 4 bits
 16 possible due to 4 bit representative value
 
 imm - [0000][000000000000]
-immediate the value stored in the first twelve digits to reg0
+immediate the value stored in the first twelve digits to reg0 using registry editor
 
 cpy - [0001][000000][000000]
-copy from the address specified in the digits 7-12 to the address specified in the digits 1-6
+copy from the address specified in the digits 7-12 to the address specified in the digits 1-6 using registry
 
 add - [0010]
 add the values stored in reg1 and reg2 and output to reg3
