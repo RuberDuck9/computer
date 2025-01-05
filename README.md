@@ -7,7 +7,9 @@ Main components:
  - System clock   
  - Instruction interpreter
  - Read only memory 
+ - Memory Controller
  - ALU
+   
 
 Registry editor:  
 Has the ability to copy data from any registry to any other registry   
@@ -68,6 +70,7 @@ ROM:
 [000000000000][0000000000000000] - [Address][Stored Value] - [Input][Output] 
 
 12 bits used for rom address (could be higher but would be unnecessary)
+data stored as hex values for space
 read value at current address and pass it through to cpu   
 
 Memory Controller:
@@ -78,3 +81,4 @@ override back to value specified in instructions "gto" and "rst"
 ALU:  
 performs a math operation based on the value passed to it by the instruction interpreter   
 can perform addition, subtraction, multiplication, division
+save output in alu2
