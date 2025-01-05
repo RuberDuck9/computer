@@ -4,14 +4,14 @@
 
 Main components:
  - Registry and registry editor
- - System syncronization clock
+ - System clock   
  - Instruction interpreter
  - Read only memory 
  - ALU
 
 Registry editor:  
 Has the ability to copy data from any registry to any other registry   
-Has direct 12 bit write access to reg0  
+Has direct 12 bit write access to reg0
 
 Register Addresses:  
 6 bits allocated to each address
@@ -26,8 +26,7 @@ Register 06 - [000011]
 Register alu0 - [000110] - alu has direct read access   
 Register alu1 - [001100] - alu has direct read access  
 Register alu2 - [011000] - alu has direct write access   
-
-Output - [111111] - only write access  
+Output - [111111] - symbolic in name only, functions as the first 7 registers do 
 
 Instructions:  
 Evaluated by the instruction interpreter based off last 4 bits
@@ -66,14 +65,15 @@ halt the computer
 
 ROM:  
 
-[0000000000000000][0000000000000000] - [Address][Stored Value] - [Input][Output] 
+[000000000000][0000000000000000] - [Address][Stored Value] - [Input][Output] 
 
-16 bits available for rom address  
-advance one memory address each "tick" or unit of time starting at zero   
-override back to value specified in instructions "gto" and "rst"   
+12 bits used for rom address (could be higher but would be unnecessary)
 read value at current address and pass it through to cpu   
 
-128 kilobytes capacity - 65536 addresses * 2 bytes per addres =  131072 bytes   
+Memory Controller:
+
+advance one memory address each "tick" or unit of time starting at zero   
+override back to value specified in instructions "gto" and "rst"   
 
 ALU:  
 performs a math operation based on the value passed to it by the instruction interpreter   
