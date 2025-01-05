@@ -16,19 +16,18 @@ Has direct 12 bit write access to reg0
 Register Addresses:  
 6 bits allocated to each address
 
-Input - [000000] - only read access  
-Output - [111111] - only write access  
-
 Register 00 - [000001] - direct 12 bit write access with registry editor imm instruction  
-Register 01 - [000010] - alu has direct read access  
-Register 02 - [000100] - alu has direct read access  
-Register 03 - [001000] - alu has direct write access  
+Register 01 - [000010]  
+Register 02 - [000100]  
+Register 03 - [001000] 
 Register 04 - [010000]  
 Register 05 - [100000]  
 Register 06 - [000011]  
-Register 07 - [000110]  
-Register 08 - [001100]  
-Register 09 - [011000]  
+Register alu0 - [000110] - alu has direct read access  
+Register alu1 - [001100] - alu has direct read access 
+Register alu2 - [011000] - alu has direct write access  
+
+Output - [111111] - only write access  
 
 Instructions:  
 Evaluated by the instruction interpreter based off last 4 bits
