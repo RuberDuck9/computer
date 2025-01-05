@@ -23,9 +23,9 @@ Register 03 - [001000]
 Register 04 - [010000]  
 Register 05 - [100000]  
 Register 06 - [000011]  
-Register alu0 - [000110] - alu has direct read access  
-Register alu1 - [001100] - alu has direct read access 
-Register alu2 - [011000] - alu has direct write access  
+Register alu0 - [000110] - alu has direct read access   
+Register alu1 - [001100] - alu has direct read access  
+Register alu2 - [011000] - alu has direct write access   
 
 Output - [111111] - only write access  
 
