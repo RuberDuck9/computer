@@ -1,5 +1,7 @@
 # 16 Bit Custom Computer
 
+ALL INFORMAION IN HERE IS MOST LIKELY CORRECT, BUT PLEASE LET ME KNOW IF THERE ARE INCONSISTENCY THAT I MISSED   
+
 16 Bit - [0000][000000][000000] - [Instruction][Copy from address][Copy to address]
 
 Main components:
