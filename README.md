@@ -42,7 +42,7 @@ immediate the value stored in the first twelve digits to reg0 using registry edi
 cpy - [0001][000000][000000]
 copy from the address specified in the digits 7-12 to the address specified in the digits 1-6 using registry
 
-clc - [0100][000000000000]
+clc - [0010][000000000000]
 do the math operation specified in the first 12 digits (0 add, 1 sub, 2 mult, 3 div, 4 and)
 
 gto - [1010][000000000000]
