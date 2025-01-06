@@ -43,7 +43,7 @@ cpy - [0001][000000][000000]
 copy from the address specified in the digits 7-12 to the address specified in the digits 1-6 using registry
 
 clc - [0010][000000000000]
-do the math operation specified in the first 12 digits (0 add, 1 sub, 2 mult, 3 div, 4 and)
+do the math operation specified in the first 12 digits (0 add, 1 sub, 2 mult, 3 div, 4 and, 5 or, 6 nand, 7 nor)
 
 gto - [1010][000000000000]
 go to the address in rom specified in the first twelve digits
