@@ -42,21 +42,8 @@ immediate the value stored in the first twelve digits to reg0 using registry edi
 cpy - [0001][000000][000000]
 copy from the address specified in the digits 7-12 to the address specified in the digits 1-6 using registry
 
-add - [0010]
-add the values stored in reg1 and reg2 and output to reg3
-reg1 + reg2 = reg3
-
-sub - [0100]
-subtract the value stored in reg2 from the value stored in reg1 and output the result to reg3
-reg1 - reg2 = reg3
-
-mlt - [1000]
-multiply the values stored in reg1 and reg2 and output the result to reg3
-reg1 * reg2 = reg3
-
-div - [1001]
-divide the value stored in reg1 by the value stored in reg2 and output the result to reg3
-reg1 / reg2 = reg3
+clc - [0100][000000000000]
+do the math operation specified in the first 12 digits (0 add, 1 sub, 2 mult, 3 div)
 
 gto - [1010][000000000000]
 go to the address in rom specified in the first twelve digits
